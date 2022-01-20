@@ -16,15 +16,13 @@ function InterviewerListItem(props) {
   })
 
   return (
-    <li onClick={() => props.setInterviewer(props.id)} className={interviewClass}>
+    <li onClick={props.setInterviewer} className={interviewClass}>
       <img
       className={interviewImage}
       src={props.avatar}
       alt={props.name}
       />
-      
-      {props.selected === true && <span>{props.name}</span>}
-      {props.selected === false && <span></span>}
+      {props.selected && props.name}
     </li>
   )
 }
