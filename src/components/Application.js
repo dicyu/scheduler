@@ -18,21 +18,6 @@ export default function Application(props) {
   const GET_INTERVIEWERS = 'http://localhost:8001/api/interviewers';
   
   const setDay = day => setState({...state, day});
-  // const setDays = days => setState(prev => ({...prev, days}));
-  
-  
-  // Promise.all([
-    //   axios.get(GET_DAYS),
-    //   axios.get(GET_APPOINTMENTS),
-    //   axios.get(GET_INTERVIEWERS)
-    // ]).then((all) => {
-      
-      //   const [first, second, third] = all;
-      
-      //   console.log(first, second, third);
-      // });
-      
-      // API Axios call for days
       
       useEffect(() => {
         Promise.all([
