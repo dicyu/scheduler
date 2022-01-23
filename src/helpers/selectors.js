@@ -16,4 +16,14 @@ export function getAppointmentsForDay(state, day) {
   return filteredAppts(state.appointments, appointmentArr);
 }
 
-export default getAppointmentsForDay;
+export function getInterview(state, interview) {
+
+  if (!interview) {
+    return null;
+  }
+  const interInfo = state.interviewers[interview.interviewer]
+  return {
+    student: interview.student,
+    interviewer: interInfo
+  }
+}
