@@ -35,6 +35,7 @@ export function getInterviewersForDay(state, day) {
     if (interObj.name === day) {
       interObj.interviewers.forEach(interId => interviewersArr.push(interId))
     }
+    return null;
   })
   return filteredAppts(state.interviewers, interviewersArr);
 }
