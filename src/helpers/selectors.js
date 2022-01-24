@@ -27,3 +27,14 @@ export function getInterview(state, interview) {
     interviewer: interInfo
   }
 }
+
+export function getInterviewersForDay(state, day) {
+  let interviewersArr = [];
+
+  state.days.map(interObj => {
+    if (interObj.name === day) {
+      interObj.interviewers.forEach(interId => interviewersArr.push(interId))
+    }
+  })
+  return filteredAppts(state.interviewers, interviewersArr);
+}
