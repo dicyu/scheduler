@@ -12,7 +12,7 @@ import useVisualMode from 'hooks/useVisualMode';
 
 
 import "components/Appointment/styles.scss";
-import { action } from "@storybook/addon-actions/dist/preview";
+// import { action } from "@storybook/addon-actions/dist/preview";
 
 const EMPTY = 'EMPTY';
 const SHOW = 'SHOW';
