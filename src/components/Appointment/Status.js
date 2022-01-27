@@ -1,5 +1,7 @@
-import React from 'react';
+// Importing
+import React from "react";
 
+// Function for the Status state
 function Status(props) {
   return (
     <main className="appointment__card appointment__card--status">

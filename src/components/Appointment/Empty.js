@@ -1,13 +1,15 @@
-import React from 'react';
+// Importing
+import React from "react";
 
+// Function for the Empty state
 function Empty(props) {
   return (
-    <main className='appointment__add'>
+    <main className="appointment__add">
       <img
-      className='appointment__add-button'
-      src='images/add.png'
-      alt='Add'
-      onClick={props.onAdd}
+        className="appointment__add-button"
+        src="images/add.png"
+        alt="Add"
+        onClick={props.onAdd}
       />
     </main>
   );
